@@ -82,9 +82,11 @@ class Tree{
 
 const filesystem = new Tree('/')
 
-filesystem.add('documents/personal/tax.docx')
+filesystem.add('documents')
+filesystem.add('documents/myDta/tax.docx')
+filesystem.add('personal')
 filesystem.add('games/cod.exe')
 filesystem.add('games/cod2.exe')
 filesystem.remove('games/cod.exe')
-console.log(filesystem.find('personal'));
+console.log(filesystem.find('cod.exe'));
 console.log(filesystem);
