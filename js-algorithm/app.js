@@ -1,8 +1,26 @@
-function fib(n){
-  const nums = [1,1]
-  for(let i=2;i<n+1;i++){
-    nums.push(nums[i-2]+nums[i-1])
+// function isPowerOftwo(num){
+//   // return Math.log2(num) % 1 === 0
+//   debugger
+//   if(num<1){
+//     return false
+//   }
+//   let dividedNumber = num
+//   while(dividedNumber !== 1){
+//     if(dividedNumber % 2 !==0){
+//       return false
+//     }
+//     dividedNumber /= 2
+//   }
+//   return true
+// }
+function isPowerOftwo(number){
+  if(number<1){
+    return false
   }
-  return nums[n]
+   return (number & (number-1)) === 0
 }
-console.log(fib(4));
+
+console.log(isPowerOftwo(8));
+console.log(isPowerOftwo(5));
+console.log(isPowerOftwo(16));
+console.log(isPowerOftwo(13));
