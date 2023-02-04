@@ -1,6 +1,6 @@
 function findElement(arr,target){
   debugger
-  let half = ~~(arr.length-1/2)
+  let half = ~~((arr.length-1)/2)
   while(target!== arr[half]){
     if(target<arr[half]){
       half /=2 
@@ -10,7 +10,7 @@ function findElement(arr,target){
       target = arr[half]
     }
   }
-  return target
+  return target ?? 'cant not find'
 }
 // 递归形式
 function findElement1(arr,target){
