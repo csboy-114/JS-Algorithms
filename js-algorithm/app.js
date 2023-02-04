@@ -1,17 +1,10 @@
-function fib(n,memo){
-  console.log('memo----',memo);
-  let result;
-  if(memo[n]){
-    return memo[n]
+function findElement(arr,target){
+  let index = 0
+  for(item of arr){
+    if(item === target) return index
+    index++
   }
-   if(n === 0 || n === 1){
-      result = 1
-   }else{
-    result = fib(n-1,memo)+fib(n-2,memo)
-   }
-   memo[n] =result
-   return result
 }
 
-console.log(fib(3,{}));
-// console.log(fib(10,{}));
+const arr = [5,3,10,-10,33,51]
+console.log(findElement(arr,33));
