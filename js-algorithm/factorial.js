@@ -11,4 +11,4 @@ function fac(number){
   if(number===1) return 1
   return number * fac(number-1)
 }
-console.log(fac(5));
+console.log(fac(10));
