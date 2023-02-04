@@ -1,5 +1,4 @@
 function fib(n,memo){
-  console.log('memo----',memo);
   let result;
   if(memo[n]){
     return memo[n]
